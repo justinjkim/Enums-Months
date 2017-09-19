@@ -1,5 +1,8 @@
 package com.example;
 
+import com.example.common.Month;
+
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -10,6 +13,7 @@ public class Main {
         System.out.println("Please enter a month, e.g., January");
         Scanner input = new Scanner(System.in);
 
+        ArrayList<Month> followingMonths = new ArrayList<>();
 
     }
 }
