@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
 
-        System.out.println("Please enter a month, e.g., January");
+        System.out.println("Please enter a month, e.g., January:");
         Scanner input = new Scanner(System.in);
 
         ArrayList<Month> followingMonths = new ArrayList<>();
@@ -41,7 +41,18 @@ public class Main {
                 followingMonths.add(Month.NOVEMBER);
             case "December":
                 followingMonths.add(Month.DECEMBER);
+                break;
+            default:
+                System.out.println("Hmm, that was not an expected input. Please try again:");
+                month = input.nextLine();
         }
+
+        System.out.println("You have selected " + month + ". Here are the following months after that: ");
+        for (Month mon: followingMonths) {
+            System.out.println(mon);
+        }
+
+
 
     }
 }
