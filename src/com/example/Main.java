@@ -44,7 +44,7 @@ public class Main {
                 break;
             default:
                 System.out.println("Hmm, that was not an expected input. Please try again:");
-                month = input.nextLine();
+                month = input.nextLine(); // hmm, a wrong input on the second time doesn't work as expected...
         }
 
         System.out.println("You have selected " + month + ". Here are the following months after that: ");
